@@ -3,164 +3,248 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>UTE AI Laboratory</title>
-  <link rel="icon" type="image/jpg" href="Logos/UTE-AI-cropped.jpg"/>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter&family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+  <title>UTE AI Laboratory - Publications</title>
+  <link rel="icon" type="image/jpg" href="Logos/UTE-AI-cropped.jpg" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
+<body class="bg-gray-50 text-gray-800 font-sans">
 
-<body>
   <!-- Navigation Bar -->
-  <nav class="navbar">
-    <div class="logo">
-      <a href="index.html">
-        <img src="Logos\UTE-AI-cropped.jpg" alt="UTE AI Logo" href="index.html"/>
-      </a>
-      <span>UTE AI Laboratory</span>
+  <nav class="bg-white shadow-md">
+    <div class="max-w-7xl mx-auto px-4 flex justify-between items-center h-16">
+      <!-- Logo -->
+      <div class="flex items-center space-x-2">
+        <img src="Logos/UTE-AI-cropped.jpg" class="w-10 h-10" alt="Logo">
+        <span class="text-lg font-semibold text-gray-800">UTE AI Laboratory</span>
+      </div>
+
+      <!-- Hamburger Menu Button (Mobile) -->
+      <div class="md:hidden">
+        <button id="menu-toggle" class="text-3xl text-gray-700 focus:outline-none">&#9776;</button>
+      </div>
+
+      <!-- Navigation Links (Desktop) -->
+      <ul class="hidden md:flex space-x-6 font-medium text-gray-700 ml-auto">
+        <li><a href="index.html" class="hover:text-blue-600">HOME</a></li>
+        <li><a href="team.html" class="hover:text-blue-600">MEMBERS</a></li>
+        <li><a href="research.html" class="hover:text-blue-600">RESEARCH</a></li>
+        <li><a href="publications.html" class="hover:text-blue-600">PUBLICATIONS</a></li>
+        <li><a href="awards.html" class="hover:text-blue-600">AWARDS</a></li>
+        <li><a href="https://github.com/HoagnDawg35/ute-ailab.io" class="hover:text-blue-600">GITHUB</a></li>
+      </ul>
     </div>
-    <ul class="nav-links">
-      <li><a href="index.html">HOME</a></li>
-      <li><a href="team.html">MEMBERS</a></li>
-      <li><a href="research.html">RESEARCH</a></li>
-      <li><a href="publications.html">PUBLICATIONS</a></li>
-      <!-- <li><a href="#">NEWS</a></li> -->
-      <li><a href="https://github.com/HoagnDawg35/ute-ailab.io?tab=readme-ov-file">GITHUB</a></li> 
-    </ul>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden flex-col space-y-2 py-4 px-4 md:hidden">
+      <a href="index.html" class="block hover:text-blue-600">HOME</a>
+      <a href="team.html" class="block hover:text-blue-600">MEMBERS</a>
+      <a href="research.html" class="block hover:text-blue-600">RESEARCH</a>
+      <a href="publications.html" class="block hover:text-blue-600">PUBLICATIONS</a>
+      <a href="awards.html" class="block hover:text-blue-600">AWARDS</a>
+      <a href="https://github.com/HoagnDawg35/ute-ailab.io" class="block hover:text-blue-600">GITHUB</a>
+    </div>
   </nav>
-    <section class="publication-section">
-        <h2>Publications</h2>
 
-        <h3>International Patents</h3>
-        <ul>
-            <li>
-                <span class="year">2019:</span> Ching-Chun Huang, Vu-Hoang Tran, and Hung-Sheng Cheng, "Method for Establishing A Parking Space Detection Model and Method of Detecting Parking Spaces for A Parking Lot." <span class="journal-title">U.S. Patent 20190228658</span>, issued July 25, 2019.
-            </li>
-        </ul>
+<!-- Publications Section -->
+<section class="max-w-6xl mx-auto py-10 px-4">
+<h2 class="text-3xl font-bold mb-8 text-gray-800">Publications</h2>
 
-        <h3>International Journal Papers</h3>
-        <ul>
-            <li>
-                <span class="year">2019:</span> Manh-Hung Nguyen, Vu-Hoang Tran, Thanh-Hai Nguyen, Thanh-Nghia Nguyen, "A Deep Learning Framework for Inter-Patient ECG Classification," <span class="journal-title">International Journal of Computer Science and Network Security (IJCSNS)</span>, vol. 19, no. 1, pp. 74–84, 2019. <span class="sci-info">(E-SCI)</span>
-            </li>
-            <li>
-                <span class="year">2018:</span> Hoang Tran Vu, Ching-Chun Huang, "Parking Space Status Inference upon a Deep CNN and Multi-task Contrastive Network with Spatial Transform," <span class="journal-title">IEEE Transactions on Circuits and Systems for Video Technology (TCSVT)</span>, 2018. <span class="sci-info">(SCI-Q1)</span>
-            </li>
-            <li>
-                <span class="year">2017:</span> Ching-Chun Huang and Hoang Tran Vu, "Vacant Parking Space Detection based on a Multi-layer Inference Framework," <span class="journal-title">IEEE Transactions on Circuits and Systems for Video Technology (TCSVT)</span>, vol. 27, no. 9, pp. 2041–2054, 2017. <span class="sci-info">(SCI-Q1)</span>
-            </li>
-        </ul>
+<!-- International Patents -->
+<div class="mb-10">
+    <h3 class="text-2xl font-semibold text-blue-700 mb-4">International Patents</h3>
+    <ul class="space-y-3 list-disc pl-6">
+    <li>
+        <span class="font-bold text-gray-700">2019:</span> Ching-Chun Huang, Vu-Hoang Tran, and Hung-Sheng Cheng,
+        <em>"Method for Establishing A Parking Space Detection Model and Method of Detecting Parking Spaces for A Parking Lot."</em>
+        <span class="italic text-gray-600">U.S. Patent 20190228658</span>, issued July 25, 2019.
+    </li>
+    </ul>
+</div>
 
-        <h3>International Conference Papers</h3>
-        <ul>
-            <li>
-                <span class="year">2025:</span> Van-Tin Luu, Vu-Hoang Tran, Ching-Chun Huang, "RC-AutoCalib: An End-to-End Radar-Camera Automatic Calibration Network," <span class="journal-title">IEEE Conference on Computer Vision and Pattern Recognition (CVPR)</span>, June 2025.
-            </li>
-            <li>
-                <span class="year">2024:</span> 
-                <div style="margin-bottom: 10px;">Huu-Phu Do, Vu-Hoang Tran, Ching-Chun Huang, "Blind Super Resolution with Reference Images and Implicit Degradation Representation," <span class="journal-title">Asian Conference on Computer Vision (ACCV)</span>, Dec. 2024.</div>
-                <div>Huu-Hieu Tran, Vu-Hoang Tran, Ching-Chun Huang, "Improving Video Retrieval Systems Using Multimodal Fusion and Re-ranking Algorithm," <span class="journal-title">International Conference on Green Technology and Sustainable Development (GTSD)</span>, July 2024.</div>
-            </li>
-            <li>
-                <span class="year">2023:</span> 
-                <div style="margin-bottom: 10px;">Ngoc-Quan Ha-Phan, Vu-Hoang Tran, Ching-Chun Huang, "A Reliable Feature-Based Framework for Vehicle Tracking in Advanced Driver Assistance Systems," <span class="journal-title">APSIPA ASC</span>, Oct. 2023.</div>
-                <div style="margin-bottom: 10px;">Cong-Ty Dang, Vu-Hoang Tran, Ching-Chun Huang, "From Synthetic To Real: Enhancing Deep Learning Models With GANs for Efficient Data Utilization in Automatic Retail Stores," <span class="journal-title">APSIPA ASC</span>, Oct. 2023.</div>
-                <div style="margin-bottom: 10px;">Nhat-Tuong Do-Tran, Vu-Hoang Tran, Ching-Chun Huang, "Efficient Video Retrieval Method Based on Transition Detection and Metadata," <span class="journal-title">International Conference on System Science and Engineering (ICSSE)</span>, July 2023.</div>
-                <div>Van-Tin Luu, Vu-Hoang Tran, Ching-Chun Huang, "D2D: Divide to Detect, A Scale-Aware Framework for On-Road Object Detection Using IR Camera," <span class="journal-title">IEEE ICCE</span>, Jan. 2023.</div>
-            </li>
-            <li>
-                <span class="year">2022:</span> 
-                <div style="margin-bottom: 10px;">Khanh-Phong Bui, Vu-Hoang Tran, Ching-Chun Huang, "The Design of a Multi-task Learning System for Autonomous Vehicles," <span class="journal-title">GTSD</span>, July 2022.</div>
-                <div>Egor Poliakov, Vu-Hoang Tran, Ching-Chun Huang, "Model Compression via Structural Pruning and Feature Distillation for Accurate Multi-spectral Object Detection on Edge-devices," <span class="journal-title">IEEE ICME</span>, July 2022.</div>
-            </li>
-            <li>
-                <span class="year">2021:</span> 
-                <div style="margin-bottom: 10px;">Vu-Hoang Tran, Le-Hoai-Hieu Dang, Ching-Chun Huang, "Real-time and Robust System for Counting Movement-Specific Vehicles at Crowded Intersections," <span class="journal-title">CVPR Workshops</span>, June 2021.</div>
-                <div style="margin-bottom: 10px;">Le-Hoai-Hieu Dang, Vu-Hoang Tran, Ching-Chun Huang, "Robust System for Counting Movement-Specific Vehicles," <span class="journal-title">ICSSE</span>, Aug. 2021.</div>
-                <div style="margin-bottom: 10px;">Minh-Nghia Nguyen, Vu-Hoang Tran, Ching-Chun Huang, "Depth Embedded and Dense Dilated Convolutional Network for Crowd Density Estimation," <span class="journal-title">ICSSE</span>, Aug. 2021.</div>
-                <div style="margin-bottom: 10px;">Pham-Tuan-Anh Phung, Vu-Hoang Tran, Ching-Chun Huang, "Using Deep Learning in A Welding Practice Training Support System," <span class="journal-title">ICSSE</span>, Aug. 2021.</div>
-                <div>You-Feng Wu, Vu-Hoang Tran, Ching-Chun Huang, "DEN: Disentangling and Exchanging Network for Depth Completion," <span class="journal-title">ICPR</span>, Jan. 2021.</div>
-            </li>
-            <li>
-                <span class="year">2020:</span> 
-                <div style="margin-bottom: 10px;">Trung-Hieu Nguyen, Vu-Hoang Tran, Ching-Chun Huang, "A Lightweight Model For Real-time Traffic Sign Recognition," <span class="journal-title">GTSD</span>, Nov. 2020.</div>
-                <div style="margin-bottom: 10px;">Van-Tin Luu, Vu-Hoang Tran, Ching-Chun Huang, "Traditional Method Meets Deep Learning in Adaptive Lane and Obstacle Detection," <span class="journal-title">GTSD</span>, Nov. 2020.</div>
-                <div style="margin-bottom: 10px;">Nelson Chong, Vu-Hoang Tran, Ching-Chun Huang, "DEN: Disentanglement and Enhancement Networks for Low Illumination Images," <span class="journal-title">IEEE VCIP</span>, Dec. 2020.</div>
-                <div>Wei-Zhong Zheng, Vu-Hoang Tran, Ching-Chun Huang, "D2NA: Day-to-Night Adaptation for Vision-based Parking Management System," <span class="journal-title">ICASSP</span>, May 2020.</div>
-            </li>
-            <li>
-                <span class="year">2019:</span> 
-                <div style="margin-bottom: 10px;">Vu-Hoang Tran, Ching-Chun Huang, "Domain Adaptation Meets Disentangled Representation Learning and Style Transfer," <span class="journal-title">IEEE SMC</span>, Oct. 2019.</div>
-                <div style="margin-bottom: 10px;">Van-Su Huynh, Vu-Hoang Tran, Ching-Chun Huang, "IUML: Inception U-Net based Multi-Task Learning for Crowd Estimation," <span class="journal-title">IEEE SMC</span>, Oct. 2019.</div>
-                <div style="margin-bottom: 10px;">Van-Su Huynh, Vu-Hoang Tran, Ching-Chun Huang, "DAnet: Depth-Aware Network for Crowd Counting," <span class="journal-title">IEEE ICIP</span>, Sept. 2019.</div>
-                <div>You-Feng Wu, Vu-Hoang Tran, Ching-Chun Huang, "Semi-supervised and Multi-task Learning for On-street Parking Space Inference," <span class="journal-title">MAPR</span>, May 2019. <span class="award">(Best Paper Award)</span></div>
-            </li>
-            <li>
-                <span class="year">2018:</span> Thanh-Phat Nguyen, Vu-Hoang Tran, Ching-Chun Huang, "Lane Detection and Tracking using FCN and PGMs," <span class="journal-title">IEEE SMC</span>, Oct. 2018.
-            </li>
-            <li>
-                <span class="year">2017:</span> Hoang Tran Vu, Ching-Chun Huang, "A Multi-Task CNN with Spatial Transform for Parking Space Detection," <span class="journal-title">IEEE ICIP</span>, Sept. 2017.
-            </li>
-            <li>
-                <span class="year">2016:</span> 
-                <div style="margin-bottom: 10px;">Hoang Tran Vu, Ching-Chun Huang, "A Hybrid Method for Visitor Localization in a Museum Environment," <span class="journal-title">IEEE Ubi-Media</span>, Aug. 2016.</div>
-                <div>Ching-Chun Huang, Hoang Tran Vu, "HDR Compression based on Image Matting Laplacian," <span class="journal-title">IEEE ICCE-TW</span>, 2016. <span class="award">(Best Paper Award – Second Prize)</span></div>
-            </li>
-            <li>
-                <span class="year">2015:</span> 
-                <div style="margin-bottom: 10px;">Ching-Chun Huang, Hoang Tran Vu, "A Multi-Layer Discriminative Framework for Parking Space Detection," <span class="journal-title">IEEE MLSP</span>, Sept. 2015.</div>
-                <div>Ching-Chun Huang, Hoang Tran Vu, "A Multiclass Boosting Approach for Parking Detection," <span class="journal-title">IEEE ICCE-TW</span>, June 2015.</div>
-            </li>
-            <li>
-                <span class="year">2014:</span> Ching-Chun Huang, Hoang Tran Vu, "Inter-Vehicle Communication and License Plate Verification," <span class="journal-title">IEEE ICCVE</span>, Nov. 2014.
-            </li>
-        </ul>
+<!-- International Journal Papers -->
+<div class="mb-10">
+    <h3 class="text-2xl font-semibold text-blue-700 mb-4">International Journal Papers</h3>
+    <ul class="space-y-3 list-disc pl-6">
+    <li>
+        <span class="font-bold text-gray-700">2019:</span> Manh-Hung Nguyen, Vu-Hoang Tran, Thanh-Hai Nguyen, Thanh-Nghia Nguyen,
+        <em>"A Deep Learning Framework for Inter-Patient ECG Classification,"</em>
+        <span class="italic text-gray-600">International Journal of Computer Science and Network Security (IJCSNS)</span>, vol. 19, no. 1, pp. 74–84, 2019. <span class="text-gray-500">(E-SCI)</span>
+    </li>
+    <li>
+        <span class="font-bold text-gray-700">2018:</span> Hoang Tran Vu, Ching-Chun Huang,
+        <em>"Parking Space Status Inference upon a Deep CNN and Multi-task Contrastive Network with Spatial Transform,"</em>
+        <span class="italic text-gray-600">IEEE Transactions on Circuits and Systems for Video Technology (TCSVT)</span>, 2018. <span class="text-gray-500">(SCI-Q1)</span>
+    </li>
+    <li>
+        <span class="font-bold text-gray-700">2017:</span> Ching-Chun Huang and Hoang Tran Vu,
+        <em>"Vacant Parking Space Detection based on a Multi-layer Inference Framework,"</em>
+        <span class="italic text-gray-600">IEEE Transactions on Circuits and Systems for Video Technology (TCSVT)</span>, vol. 27, no. 9, pp. 2041–2054, 2017. <span class="text-gray-500">(SCI-Q1)</span>
+    </li>
+    </ul>
+</div>
 
-        <h3>Domestic Journal Papers</h3>
-        <ul>
-            <li>
-                <span class="year">2021:</span> Trần Ngọc Thiện, Trần Vũ Hoàng, "Ứng dụng học sâu trong việc hỗ trợ đào tạo thực tập hàn," <span class="journal-title">Tạp chí Cơ khí Việt Nam</span>, số 4, 2021.
-            </li>
-        </ul>
+<!-- International Conference Papers -->
+<div class="mb-10">
+    <h3 class="text-2xl font-semibold text-blue-700 mb-4">International Conference Papers</h3>
+    <div class="space-y-6 pl-4">
+    <!-- 2025 -->
+<div>
+<span class="font-bold text-gray-700">2025:</span>
+<p class="ml-4">Van-Tin Luu, Vu-Hoang Tran, Ching-Chun Huang, <em>"RC-AutoCalib: An End-to-End Radar-Camera Automatic Calibration Network,"</em> <span class="italic text-gray-600">IEEE CVPR</span>, June 2025.</p>
+</div>
+<!-- 2024 -->
+<div>
+<span class="font-bold text-gray-700">2024:</span>
+<div class="ml-4 space-y-2">
+    <p>Huu-Phu Do, Vu-Hoang Tran, Ching-Chun Huang, <em>"Blind Super Resolution with Reference Images and Implicit Degradation Representation,"</em> <span class="italic text-gray-600">ACCV</span>, Dec. 2024.</p>
+    <p>Huu-Hieu Tran, Vu-Hoang Tran, Ching-Chun Huang, <em>"Improving Video Retrieval Systems Using Multimodal Fusion and Re-ranking Algorithm,"</em> <span class="italic text-gray-600">GTSD</span>, July 2024.</p>
+</div>
+</div>
+<!-- 2023 -->
+<div>
+<span class="font-bold text-gray-700">2023:</span>
+<div class="ml-4 space-y-2">
+    <p>Ngoc-Quan Ha-Phan, Vu-Hoang Tran, Ching-Chun Huang, <em>"A Reliable Feature-Based Framework for Vehicle Tracking in Advanced Driver Assistance Systems,"</em> <span class="italic text-gray-600">APSIPA ASC</span>, Oct. 2023.</p>
+    <p>Cong-Ty Dang, Vu-Hoang Tran, Ching-Chun Huang, <em>"From Synthetic To Real: Enhancing Deep Learning Models With GANs for Efficient Data Utilization in Automatic Retail Stores,"</em> <span class="italic text-gray-600">APSIPA ASC</span>, Oct. 2023.</p>
+    <p>Nhat-Tuong Do-Tran, Vu-Hoang Tran, Ching-Chun Huang, <em>"Efficient Video Retrieval Method Based on Transition Detection and Metadata,"</em> <span class="italic text-gray-600">ICSSE</span>, July 2023.</p>
+    <p>Van-Tin Luu, Vu-Hoang Tran, Ching-Chun Huang, <em>"D2D: Divide to Detect, A Scale-Aware Framework for On-Road Object Detection Using IR Camera,"</em> <span class="italic text-gray-600">IEEE ICCE</span>, Jan. 2023.</p>
+</div>
+</div>
+<!-- 2022 -->
+<div>
+<span class="font-bold text-gray-700">2022:</span>
+<div class="ml-4 space-y-2">
+    <p>Khanh-Phong Bui, Vu-Hoang Tran, Ching-Chun Huang, <em>"The Design of a Multi-task Learning System for Autonomous Vehicles,"</em> <span class="italic text-gray-600">GTSD</span>, July 2022.</p>
+    <p>Egor Poliakov, Vu-Hoang Tran, Ching-Chun Huang, <em>"Model Compression via Structural Pruning and Feature Distillation for Accurate Multi-spectral Object Detection on Edge-devices,"</em> <span class="italic text-gray-600">IEEE ICME</span>, July 2022.</p>
+</div>
+</div>
+<!-- 2021 -->
+<div>
+<span class="font-bold text-gray-700">2021:</span>
+<div class="ml-4 space-y-2">
+    <p>Vu-Hoang Tran, Le-Hoai-Hieu Dang, Ching-Chun Huang, <em>"Real-time and Robust System for Counting Movement-Specific Vehicles at Crowded Intersections,"</em> <span class="italic text-gray-600">CVPR Workshops</span>, June 2021.</p>
+    <p>Le-Hoai-Hieu Dang, Vu-Hoang Tran, Ching-Chun Huang, <em>"Robust System for Counting Movement-Specific Vehicles,"</em> <span class="italic text-gray-600">ICSSE</span>, Aug. 2021.</p>
+    <p>Minh-Nghia Nguyen, Vu-Hoang Tran, Ching-Chun Huang, <em>"Depth Embedded and Dense Dilated Convolutional Network for Crowd Density Estimation,"</em> <span class="italic text-gray-600">ICSSE</span>, Aug. 2021.</p>
+    <p>Pham-Tuan-Anh Phung, Vu-Hoang Tran, Ching-Chun Huang, <em>"Using Deep Learning in A Welding Practice Training Support System,"</em> <span class="italic text-gray-600">ICSSE</span>, Aug. 2021.</p>
+    <p>You-Feng Wu, Vu-Hoang Tran, Ching-Chun Huang, <em>"DEN: Disentangling and Exchanging Network for Depth Completion,"</em> <span class="italic text-gray-600">ICPR</span>, Jan. 2021.</p>
+</div>
+</div>
+<!-- 2020 -->
+<div>
+<span class="font-bold text-gray-700">2020:</span>
+<div class="ml-4 space-y-2">
+    <p>Trung-Hieu Nguyen, Vu-Hoang Tran, Ching-Chun Huang, <em>"A Lightweight Model For Real-time Traffic Sign Recognition,"</em> <span class="italic text-gray-600">GTSD</span>, Nov. 2020.</p>
+    <p>Van-Tin Luu, Vu-Hoang Tran, Ching-Chun Huang, <em>"Traditional Method Meets Deep Learning in Adaptive Lane and Obstacle Detection,"</em> <span class="italic text-gray-600">GTSD</span>, Nov. 2020.</p>
+    <p>Nelson Chong, Vu-Hoang Tran, Ching-Chun Huang, <em>"DEN: Disentanglement and Enhancement Networks for Low Illumination Images,"</em> <span class="italic text-gray-600">IEEE VCIP</span>, Dec. 2020.</p>
+    <p>Wei-Zhong Zheng, Vu-Hoang Tran, Ching-Chun Huang, <em>"D2NA: Day-to-Night Adaptation for Vision-based Parking Management System,"</em> <span class="italic text-gray-600">ICASSP</span>, May 2020.</p>
+</div>
+</div>
+<!-- 2019 -->
+<div>
+<span class="font-bold text-gray-700">2019:</span>
+<div class="ml-4 space-y-2">
+    <p>Vu-Hoang Tran, Ching-Chun Huang, <em>"Domain Adaptation Meets Disentangled Representation Learning and Style Transfer,"</em> <span class="italic text-gray-600">IEEE SMC</span>, Oct. 2019.</p>
+    <p>Van-Su Huynh, Vu-Hoang Tran, Ching-Chun Huang, <em>"IUML: Inception U-Net based Multi-Task Learning for Crowd Estimation,"</em> <span class="italic text-gray-600">IEEE SMC</span>, Oct. 2019.</p>
+    <p>Van-Su Huynh, Vu-Hoang Tran, Ching-Chun Huang, <em>"DAnet: Depth-Aware Network for Crowd Counting,"</em> <span class="italic text-gray-600">IEEE ICIP</span>, Sept. 2019.</p>
+    <p>You-Feng Wu, Vu-Hoang Tran, Ching-Chun Huang, <em>"Semi-supervised and Multi-task Learning for On-street Parking Space Inference,"</em> <span class="italic text-gray-600">MAPR</span>, May 2019. <span class="text-gray-500">(Best Paper Award)</span></p>
+</div>
+</div>
+<!-- 2018 -->
+<div>
+<span class="font-bold text-gray-700">2018:</span>
+<p class="ml-4">Thanh-Phat Nguyen, Vu-Hoang Tran, Ching-Chun Huang, <em>"Lane Detection and Tracking using FCN and PGMs,"</em> <span class="italic text-gray-600">IEEE SMC</span>, Oct. 2018.</p>
+</div>
+<!-- 2017 -->
+<div>
+<span class="font-bold text-gray-700">2017:</span>
+<p class="ml-4">Hoang Tran Vu, Ching-Chun Huang, <em>"A Multi-Task CNN with Spatial Transform for Parking Space Detection,"</em> <span class="italic text-gray-600">IEEE ICIP</span>, Sept. 2017.</p>
+</div>
+<!-- 2016 -->
+<div>
+<span class="font-bold text-gray-700">2016:</span>
+<div class="ml-4 space-y-2">
+    <p>Hoang Tran Vu, Ching-Chun Huang, <em>"A Hybrid Method for Visitor Localization in a Museum Environment,"</em> <span class="italic text-gray-600">IEEE Ubi-Media</span>, Aug. 2016.</p>
+    <p>Ching-Chun Huang, Hoang Tran Vu, <em>"HDR Compression based on Image Matting Laplacian,"</em> <span class="italic text-gray-600">IEEE ICCE-TW</span>, 2016. <span class="text-gray-500">(Best Paper Award – Second Prize)</span></p>
+</div>
+</div>
+<!-- 2015 -->
+<div>
+<span class="font-bold text-gray-700">2015:</span>
+<div class="ml-4 space-y-2">
+    <p>Ching-Chun Huang, Hoang Tran Vu, <em>"A Multi-Layer Discriminative Framework for Parking Space Detection,"</em> <span class="italic text-gray-600">IEEE MLSP</span>, Sept. 2015.</p>
+    <p>Ching-Chun Huang, Hoang Tran Vu, <em>"A Multiclass Boosting Approach for Parking Detection,"</em> <span class="italic text-gray-600">IEEE ICCE-TW</span>, June 2015.</p>
+</div>
+</div>
+<!-- 2014 -->
+<div>
+<span class="font-bold text-gray-700">2014:</span>
+<p class="ml-4">Ching-Chun Huang, Hoang Tran Vu, <em>"Inter-Vehicle Communication and License Plate Verification,"</em> <span class="italic text-gray-600">IEEE ICCVE</span>, Nov. 2014.</p>
+</div>
+    </div>
+</div>
 
-        <h3>Domestic Conference Papers</h3>
-        <ul>
-            <li>
-                <span class="year">2018:</span> 
-                <div style="margin-bottom: 10px;">Thanh-Phat Nguyen, Hoang Tran Vu, Ching-Chun Huang, "A Deep Segmentation Network And A Probabilistic Graphical Models for Lane Detection and Tracking," <span class="journal-title">Computer Vision, Graphic and Image Processing (CVGIP)</span>, Aug. 2018. <span class="award">(Good Paper Award)</span></div>
-                <div>You-Feng Wu, Hoang Tran Vu, Ching-Chun Huang, "Sensor Based On-Street Parking Space Status Inference Upon A Semi-Supervised And Multi-Task Learning Network," <span class="journal-title">Computer Vision, Graphic and Image Processing (CVGIP)</span>, Aug. 2018.</div>
-            </li>
-            <li>
-                <span class="year">2017:</span> 
-                <div style="margin-bottom: 10px;">Ching-Chun Huang, Hoang Tran Vu, "Parking Space Detection Based On a Multi-Task Deep Convolutional Network with Spatial Transform," <span class="journal-title">Computer Vision, Graphic and Image Processing (CVGIP)</span>, Aug. 2017.</div>
-                <div style="margin-bottom: 10px;">Chao-Yi Peng, Wei-Chen Chiu, Hoang Tran Vu, Zhi-Yi Peng, Nguyen Thanh Phat, Ching-Chung Huang, Chia-Wen Lin, "A Robust Bottom-Up Framework for Lane Detection in Urban Streets," <span class="journal-title">Computer Vision, Graphic and Image Processing (CVGIP)</span>, Aug. 2017.</div>
-                <div>Zhi-Yi Peng, Hoang Tran Vu, Wei-Chen Chiu, Ching-Chung Huang, Chia-Wen Lin, "Traffic Sign Classification Based on Deep Convolutional Network with Domain Adaptation," <span class="journal-title">Computer Vision, Graphic and Image Processing (CVGIP)</span>, Aug. 2017.</div>
-            </li>
-            <li>
-                <span class="year">2015:</span> Ching-Chun Huang, Yi-Ren Chen, and Hoang Tran Vu, "Vacant Parking Space Detection Based On A Hierarchical and Semantic Classifier," <span class="journal-title">Computer Vision, Graphic and Image Processing (CVGIP)</span>, Aug. 2015. <span class="award">(Good Paper Award)</span>
-            </li>
-            <li>
-                <span class="year">2014:</span> 
-                <div style="margin-bottom: 10px;">Yi-Ren Chen, Ching-Chun Huang, Hoang Tran Vu, "Image Enhancement in Nighttime Parking with Ghost Removal," <span class="journal-title">Computer Vision, Graphic and Image Processing (CVGIP)</span>, Aug. 2014.</div>
-                <div>Ching-Chun Huang, Hoang Tran Vu, "Crowd-Sensing Method for Driving Surrounding Construction," <span class="journal-title">Computer Vision, Graphic and Image Processing (CVGIP)</span>, Aug. 2014.</div>
-            </li>
-        </ul>
-    </section>
+<!-- Domestic Journal Papers -->
+<div class="mb-10">
+    <h3 class="text-2xl font-semibold text-blue-700 mb-4">Domestic Journal Papers</h3>
+    <ul class="space-y-3 list-disc pl-6">
+    <li>
+        <span class="font-bold text-gray-700">2021:</span> Trần Ngọc Thiện, Trần Vũ Hoàng,
+        <em>"Ứng dụng học sâu trong việc hỗ trợ đào tạo thực tập hàn,"</em>
+        <span class="italic text-gray-600">Tạp chí Cơ khí Việt Nam</span>, số 4, 2021.
+    </li>
+    </ul>
+</div>
+
+<!-- Domestic Conference Papers -->
+<div class="mb-10">
+    <h3 class="text-2xl font-semibold text-blue-700 mb-4">Domestic Conference Papers</h3>
+    <div class="space-y-6 pl-4">
+    <!-- 2018 -->
+<div>
+<span class="font-bold text-gray-700">2018:</span>
+<p class="ml-4">Trần Vũ Hoàng, Ching-Chun Huang, <em>"Hệ thống nhận dạng làn đường sử dụng Deep Learning,"</em> <span class="italic text-gray-600">Hội nghị quốc gia lần thứ XXI về Điện tử, Truyền thông và Công nghệ Thông tin (REV-ECIT)</span>, Tp.HCM, 2018.</p>
+</div>
+<!-- 2017 -->
+<div>
+<span class="font-bold text-gray-700">2017:</span>
+<p class="ml-4">Trần Vũ Hoàng, Ching-Chun Huang, <em>"Phương pháp nhận diện biển báo giao thông sử dụng Deep Learning cho hệ thống lái tự động,"</em> <span class="italic text-gray-600">Hội nghị Khoa học Công nghệ trường Đại học SPKT Tp.HCM</span>, 2017.</p>
+</div>
+<!-- 2016 -->
+<div>
+<span class="font-bold text-gray-700">2016:</span>
+<div class="ml-4 space-y-2">
+    <p>Trần Vũ Hoàng, Ching-Chun Huang, <em>"Phương pháp phát hiện và định vị xe trong bãi đỗ xe sử dụng Deep Learning,"</em> <span class="italic text-gray-600">Hội nghị Khoa học Công nghệ trường Đại học SPKT Tp.HCM</span>, 2016.</p>
+    <p>Trần Vũ Hoàng, Ching-Chun Huang, <em>"Ứng dụng Deep Learning vào việc nhận diện biển số xe và xác thực thông tin trong hệ thống giao thông thông minh,"</em> <span class="italic text-gray-600">Hội nghị khoa học Trường Đại học Giao thông Vận tải TP.HCM</span>, 2016.</p>
+</div>
+</div>
+<!-- 2015 -->
+<div>
+<span class="font-bold text-gray-700">2015:</span>
+<p class="ml-4">Trần Vũ Hoàng, Ching-Chun Huang, <em>"Phát hiện vị trí trống trong bãi đỗ xe dựa trên ảnh camera sử dụng mạng nơ-ron tích chập (CNN),"</em> <span class="italic text-gray-600">Hội nghị Sinh viên Nghiên cứu Khoa học – Trường ĐH SPKT TP.HCM</span>, 2015.</p>
+</div>
+<!-- 2014 -->
+<div>
+<span class="font-bold text-gray-700">2014:</span>
+<p class="ml-4">Trần Vũ Hoàng, Ching-Chun Huang, <em>"Hệ thống nhận diện biển số xe và xác thực thông tin qua thiết bị di động,"</em> <span class="italic text-gray-600">Hội nghị Sinh viên Nghiên cứu Khoa học – Trường ĐH SPKT TP.HCM</span>, 2014.</p>
+</div>
+    </div>
+</div>
+</section>
+
+
+  <!-- FOOTER -->
+  <footer class="bg-gradient-to-b from-black to-indigo-900 text-white text-center px-4 py-6 mt-8">
+    <div class="mb-4 flex justify-center gap-6 text-lg">
+      <a href="mailto:danghuyhoang35@gmail.com" target="_blank" class="hover:text-gray-300"><i class="fas fa-envelope"></i></a>
+      <a href="https://mail.google.com/mail/u/0/" class="hover:text-gray-300"><i class="fab fa-google"></i></a>
+      <a href="https://hoagndawg35.github.io/ute-ailab.io/" class="hover:text-gray-300"><i class="fab fa-github"></i></a>
+    </div>
+    <p class="text-sm">© 2025 UTE AI Laboratory, University of Technology and Education</p>
+    <p class="text-sm">Room C406B, 1 Vo Van Ngan St., Thu Duc City, Ho Chi Minh City, Vietnam</p>
+    <p class="text-sm">Built with <a href="https://github.com" class="underline text-blue-400 hover:text-blue-200">Lab Website Template</a></p>
+  </footer>
+
+<script src="script.js"></script>
 </body>
-  <!-- Footer -->
-<footer class="footer">
-  <div class="footer-icons">
-    <a href="mailto:danghuyhoang35@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
-    <!-- <a href="#"><i class="fas fa-phone"></i></a> -->
-    <!-- <a href="#"><i class="fas fa-id-badge"></i></a> -->
-    <a href="https://mail.google.com/mail/u/0/"><i class="fab fa-google"></i></a>
-    <a href="https://hoagndawg35.github.io/ute-ailab.io/"><i class="fab fa-github"></i></a>
-    <!-- <a href="#"><i class="fab fa-youtube"></i></a> -->
-  </div>
-
-  <p>© 2025 UTE AI Laboratory, University of Technology and Education</p>
-  <p>Room C406B, 1 Vo Van Ngan St., Thu Duc City, Ho Chi Minh City, Vietnam</p>
-  <p>Built with <a href="https://github.com">Lab Website Template</a></p>
-</footer>
-
 </html>

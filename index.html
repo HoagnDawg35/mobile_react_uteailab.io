@@ -2,103 +2,116 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>UTE AI Laboratory</title>
   <link rel="icon" type="image/jpg" href="Logos/UTE-AI-cropped.jpg"/>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Inter&family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
 </head>
 
-<body>
-  <!-- Navigation Bar -->
-  <nav class="navbar">
-    <div class="logo">
-      <a href="index.html">
-        <img src="Logos\UTE-AI-cropped.jpg" alt="UTE AI Logo" href="index.html"/>
-      </a>
-      <span>UTE AI Laboratory</span>
+<body class="bg-gray-100 pt-20 text-gray-800">
+
+  <!-- NAVBAR -->
+  <!-- Responsive NavBar using Tailwind -->
+  <nav class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center py-4">
+        <!-- Logo -->
+        <div class="flex items-center space-x-3">
+          <img src="Logos/UTE-AI-cropped.jpg" alt="UTE AI Logo" class="h-10 w-auto">
+          <span class="text-xl font-semibold">UTE AI Laboratory</span>
+        </div>
+
+        <!-- Hamburger (mobile) -->
+        <div class="md:hidden">
+          <button id="menu-toggle" class="text-gray-600 focus:outline-none text-2xl">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+
+        <!-- Nav Links (desktop) -->
+        <ul class="hidden md:flex space-x-6 font-medium">
+          <li><a href="index.html" class="hover:text-blue-600">HOME</a></li>
+          <li><a href="team.html" class="hover:text-blue-600">MEMBERS</a></li>
+          <li><a href="research.html" class="hover:text-blue-600">RESEARCH</a></li>
+          <li><a href="publications.html" class="hover:text-blue-600">PUBLICATIONS</a></li>
+          <li><a href="awards.html" class="hover:text-blue-600">AWARDS</a></li>
+          <li><a href="https://github.com/HoagnDawg35/ute-ailab.io" class="hover:text-blue-600">GITHUB</a></li>
+        </ul>
+      </div>
+
+      <!-- Mobile Nav Links -->
+      <div id="mobile-menu" class="md:hidden hidden flex-col space-y-4 pb-4">
+        <a href="index.html" class="block hover:text-blue-600">HOME</a>
+        <a href="team.html" class="block hover:text-blue-600">MEMBERS</a>
+        <a href="research.html" class="block hover:text-blue-600">RESEARCH</a>
+        <a href="publications.html" class="block hover:text-blue-600">PUBLICATIONS</a>
+        <a href="awards.html" class="block hover:text-blue-600">AWARDS</a>
+        <a href="https://github.com/HoagnDawg35/ute-ailab.io" class="block hover:text-blue-600">GITHUB</a>
+      </div>
     </div>
-    <ul class="nav-links">
-      <li><a href="index.html">HOME</a></li>
-      <li><a href="team.html">MEMBERS</a></li>
-      <li><a href="research.html">RESEARCH</a></li>
-      <li><a href="publications.html">PUBLICATIONS</a></li>
-      <!-- <li><a href="#">NEWS</a></li> -->
-      <li><a href="https://github.com/HoagnDawg35/ute-ailab.io?tab=readme-ov-file">GITHUB</a></li> 
-    </ul>
   </nav>
-  
-  <!-- Announcement -->
-  <div class="announcement">
-    <strong>Announcement:</strong> This is demo version of the website, we are updating...!🔥
+
+
+  <!-- ANNOUNCEMENT -->
+  <div class="bg-blue-100 text-blue-800 text-sm py-2 px-6 mt-0">
+    <strong>Announcement:</strong> This is demo version of the website, we are updating...! 🔥
   </div>
 
-  <!-- Banner -->
-  <div class="banner">
-    <h2>🎉 CONGRATULATIONS!</h2>
-    <p><strong>VGCRTrack:</strong> Multi-Camera 3D Tracking with View-Aware Geometric Center Refinement</p>
-    <br>
-    <p>Accepted by <strong>International Conference on Computer Vision (ICCV) Workshop 2025</strong></p>
-    <!-- <img src="pics/BG1.jpg" alt="Honolulu Hawaii Background" /> -->
+  <!-- BANNER -->
+  <div class="bg-white mx-auto my-8 p-6 w-[90%] max-w-3xl rounded-lg shadow text-center">
+    <h2 class="text-2xl font-bold text-pink-800 mb-4">🎉 CONGRATULATIONS!</h2>
+    <p class="text-base font-medium">
+      <strong>VGCRTrack:</strong> Multi-Camera 3D Tracking with View-Aware Geometric Center Refinement
+    </p>
+    <p class="mt-2">Accepted by <strong>International Conference on Computer Vision (ICCV) Workshop 2025</strong></p>
   </div>
 
-  <section class="lab-intro">
-  <h2>UTE AI Lab - Ho Chi Minh University of Technology and Education</h2>
-  <p>
-    The <strong>UTE AI Lab</strong> is the Artificial Intelligence Laboratory at HCMUTE is a research-driven hub focused on developing intelligent systems that can perceive, reason, and learn. 
-  </p>
-  <p>
-    Our work spans across various areas of AI, including machine learning, computer vision, natural language processing, and robotics. The lab brings together faculty, students, and collaborators to tackle real-world challenges using state-of-the-art AI techniques. Through interdisciplinary research and innovation, we aim to advance the field of AI while promoting ethical and human-centered applications. 
-  </p>
-  <p>
-    Our mission is to cultivate talent, foster collaboration, and contribute impactful solutions to academia, industry, and society.  
-  </p>
+  <!-- LAB INTRO -->
+  <section class="max-w-4xl mx-auto px-6 py-8 text-justify">
+    <h2 class="text-xl font-semibold text-center mb-6">UTE AI Lab - Ho Chi Minh University of Technology and Education</h2>
+    <p class="mb-4">
+      The <strong>UTE AI Lab</strong> is the Artificial Intelligence Laboratory at HCMUTE, a research-driven hub focused on developing intelligent systems that can perceive, reason, and learn.
+    </p>
+    <p class="mb-4">
+      Our work spans across various areas of AI, including machine learning, computer vision, natural language processing, and robotics. The lab brings together faculty, students, and collaborators to tackle real-world challenges using state-of-the-art AI techniques.
+    </p>
+    <p>
+      Our mission is to cultivate talent, foster collaboration, and contribute impactful solutions to academia, industry, and society.
+    </p>
+  </section>
 
-  <!-- <div class="button-group">
-    <a href="#" class="btn github">GitHub</a>
-    <a href="#" class="btn facebook">Fanpage</a>
-  </div> -->
-</section>
-
-
-  <section class="latest-news-section">
-  <h2>Latest News</h2>
-  <div class="horizontal-scroll">
-    <!-- <div class="news-card">
-      <img src="news1.jpg" alt="News Image" />
-      <h4>CVPR 2025</h4>
-      <p>ACM Lab member presented research in Nashville...</p>
+  <!-- LATEST NEWS -->
+  <section class="bg-white py-10 px-6">
+    <h2 class="text-xl font-semibold mb-4">Latest News</h2>
+    <div class="overflow-x-auto">
+      <div class="flex space-x-6">
+        <!-- You can add more news cards here later -->
+        <div class="min-w-[280px] bg-gray-100 p-4 rounded-lg shadow text-gray-700">
+          <p>To be updating...!</p>
+        </div>
+      </div>
     </div>
-    <div class="news-card">
-      <img src="news2.jpg" alt="News Image" />
-      <h4>ICCV 2025 Accepted</h4>
-      <p>Our paper on DynFaceRestore was accepted at ICCV...</p>
-    </div> -->
-    <div>
-      <p>
-        To be updating...!
-      </p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-gradient-to-b from-black to-indigo-900 text-white text-center px-4 py-6 mt-8">
+    <div class="mb-4 flex justify-center gap-6 text-lg">
+      <a href="mailto:danghuyhoang35@gmail.com" target="_blank" class="hover:text-gray-300"><i class="fas fa-envelope"></i></a>
+      <a href="https://mail.google.com/mail/u/0/" class="hover:text-gray-300"><i class="fab fa-google"></i></a>
+      <a href="https://hoagndawg35.github.io/ute-ailab.io/" class="hover:text-gray-300"><i class="fab fa-github"></i></a>
     </div>
-  </div>
-</section>
+    <p class="text-sm">© 2025 UTE AI Laboratory, University of Technology and Education</p>
+    <p class="text-sm">Room C406B, 1 Vo Van Ngan St., Thu Duc City, Ho Chi Minh City, Vietnam</p>
+    <p class="text-sm">Built with <a href="https://github.com" class="underline text-blue-400 hover:text-blue-200">Lab Website Template</a></p>
+  </footer>
+
+<script src="script.js"></script>
 </body>
-
-<!-- Footer -->
-<footer class="footer">
-  <div class="footer-icons">
-    <a href="mailto:danghuyhoang35@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
-    <!-- <a href="#"><i class="fas fa-phone"></i></a> -->
-    <!-- <a href="#"><i class="fas fa-id-badge"></i></a> -->
-    <a href="https://mail.google.com/mail/u/0/"><i class="fab fa-google"></i></a>
-    <a href="https://hoagndawg35.github.io/ute-ailab.io/"><i class="fab fa-github"></i></a>
-    <!-- <a href="#"><i class="fab fa-youtube"></i></a> -->
-  </div>
-
-  <p>© 2025 UTE AI Laboratory, University of Technology and Education</p>
-  <p>Room C406B, 1 Vo Van Ngan St., Thu Duc City, Ho Chi Minh City, Vietnam</p>
-  <p>Built with <a href="https://github.com">Lab Website Template</a></p>
-</footer>
-
 </html>
-
